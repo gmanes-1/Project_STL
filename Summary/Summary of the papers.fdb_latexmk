@@ -1,14 +1,14 @@
 # Fdb version 4
-["biber Summary of the papers"] 1738064631.33143 "Summary of the papers.bcf" "Summary of the papers.bbl" "Summary of the papers" 1738084293.80843 0
-  "/Users/giuseppe/Desktop/Master of Logic/First year/Third Period/references.bib" 1737975494.13417 2449 a1e77cfb5d38df2e1e48fc9c5e9aa541 ""
-  "Summary of the papers.bcf" 1738084293.65111 108909 d1bc98a0af77929c072ad9ebf3d20c40 "pdflatex"
+["biber Summary of the papers"] 1738093634.46246 "Summary of the papers.bcf" "Summary of the papers.bbl" "Summary of the papers" 1738093637.90655 0
+  "/Users/giuseppe/Desktop/Master of Logic/First year/Third Period/Project_STL/references.bib" 1737975494.13417 2449 a1e77cfb5d38df2e1e48fc9c5e9aa541 ""
+  "Summary of the papers.bcf" 1738093637.7565 108921 c8a1f28ec01e78fd6fb60a316fc105bc "pdflatex"
   (generated)
   "Summary of the papers.bbl"
   "Summary of the papers.blg"
   (rewritten before read)
-["pdflatex"] 1738084292.29631 "/Users/giuseppe/Desktop/Summery/Summary of the papers.tex" "Summary of the papers.pdf" "Summary of the papers" 1738084293.80867 0
+["pdflatex"] 1738093636.57457 "/Users/giuseppe/Desktop/Master of Logic/First year/Third Period/Project_STL/Summary/Summary of the papers.tex" "Summary of the papers.pdf" "Summary of the papers" 1738093637.90678 0
+  "/Users/giuseppe/Desktop/Master of Logic/First year/Third Period/Project_STL/Summary/Summary of the papers.tex" 1738093632.8902 42886 fc0350fdd4ccbbc7b5741a012db6eff3 ""
   "/Users/giuseppe/Desktop/Master of Logic/modal.tex" 1737310599.79872 11558 06f8f6b1b4657070663997f3ca2c6287 ""
-  "/Users/giuseppe/Desktop/Summery/Summary of the papers.tex" 1738084292.05898 42874 ab62813bd0063208b48d1f145635ef7b ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cochineal/coch_2gvyjv.enc" 1699995645 3258 c92bbfcf6c361e949fa4c2af0ff3fe81 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cochineal/coch_gcpa6j.enc" 1699995645 3107 47f89e6b517953c2795e337c046675b5 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cochineal/coch_ibp3xz.enc" 1699995645 3256 cabcee52ef0023e70f78c3a9f7d642a4 ""
@@ -277,11 +277,11 @@
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1729521889 8221430 35f4e6dc60a2e1cac956a15b51a03598 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "Disjunction.png" 1737561777.35657 47649 05dbdf6ec05b9178a0cbfe34ae2be2b5 ""
-  "Summary of the papers.aux" 1738084293.64765 4543 081409b35b749175f78334a59bceff3a "pdflatex"
-  "Summary of the papers.bbl" 1738064633.14935 11323 68cd8f2672061bc9a3734a2893187f0f "biber Summary of the papers"
-  "Summary of the papers.run.xml" 1738084293.65163 2508 31a17f6884b25b611250f723aed3415f "pdflatex"
-  "Summary of the papers.tex" 1738084292.05898 42874 ab62813bd0063208b48d1f145635ef7b ""
-  "Summary of the papers.toc" 1738084293.65168 1568 8fc85acf3f2da294124e8a120ba33ae9 "pdflatex"
+  "Summary of the papers.aux" 1738093637.75387 4543 081409b35b749175f78334a59bceff3a "pdflatex"
+  "Summary of the papers.bbl" 1738093636.56024 11323 68cd8f2672061bc9a3734a2893187f0f "biber Summary of the papers"
+  "Summary of the papers.run.xml" 1738093637.757 2520 a6b140c135498f91b3908e76e4f45628 "pdflatex"
+  "Summary of the papers.tex" 1738093632.8902 42886 fc0350fdd4ccbbc7b5741a012db6eff3 ""
+  "Summary of the papers.toc" 1738093637.75705 1568 8fc85acf3f2da294124e8a120ba33ae9 "pdflatex"
   (generated)
   "Summary of the papers.aux"
   "Summary of the papers.bcf"
