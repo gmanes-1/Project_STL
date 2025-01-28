@@ -1,0 +1,288 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{anyt/global//global/global}
+    \entry{donze2013}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=800cc3bad650b88f0b32ce795ab802d6}{%
+           family={Donzé},
+           familyi={D\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=11030d766ea6c4f395f6063f4c69f347}{%
+           family={Ferrere},
+           familyi={F\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=7f463f1763196d47be4efcdb27cf0f83}{%
+           family={Maler},
+           familyi={M\bibinitperiod},
+           given={Oded},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{84d18a091d83768d2921817669396225}
+      \strng{fullhash}{84d18a091d83768d2921817669396225}
+      \strng{bibnamehash}{84d18a091d83768d2921817669396225}
+      \strng{authorbibnamehash}{84d18a091d83768d2921817669396225}
+      \strng{authornamehash}{84d18a091d83768d2921817669396225}
+      \strng{authorfullhash}{84d18a091d83768d2921817669396225}
+      \field{labelalpha}{DFM13}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Computer Aided Verification: 25th International Conference, CAV 2013, Saint Petersburg, Russia, July 13-19, 2013. Proceedings 25}
+      \field{title}{Efficient robust monitoring for $\mathtt{STL} $}
+      \field{year}{2013}
+      \field{pages}{264\bibrangedash 279}
+      \range{pages}{16}
+    \endentry
+    \entry{donze2010}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=800cc3bad650b88f0b32ce795ab802d6}{%
+           family={Donzé},
+           familyi={D\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7f463f1763196d47be4efcdb27cf0f83}{%
+           family={Maler},
+           familyi={M\bibinitperiod},
+           given={Oded},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{b1c54ad349a96eaf626ab5014a437ca4}
+      \strng{fullhash}{b1c54ad349a96eaf626ab5014a437ca4}
+      \strng{bibnamehash}{b1c54ad349a96eaf626ab5014a437ca4}
+      \strng{authorbibnamehash}{b1c54ad349a96eaf626ab5014a437ca4}
+      \strng{authornamehash}{b1c54ad349a96eaf626ab5014a437ca4}
+      \strng{authorfullhash}{b1c54ad349a96eaf626ab5014a437ca4}
+      \field{labelalpha}{DM10}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference on Formal Modeling and Analysis of Timed Systems}
+      \field{title}{Robust satisfaction of temporal logic over real-valued signals}
+      \field{year}{2010}
+      \field{pages}{92\bibrangedash 106}
+      \range{pages}{15}
+    \endentry
+    \entry{donze2012}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=800cc3bad650b88f0b32ce795ab802d6}{%
+           family={Donzé},
+           familyi={D\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7f463f1763196d47be4efcdb27cf0f83}{%
+           family={Maler},
+           familyi={M\bibinitperiod},
+           given={Oded},
+           giveni={O\bibinitperiod}}}%
+        {{hash=74708e55d9eea33250d8700bf6ba6a69}{%
+           family={Bartocci},
+           familyi={B\bibinitperiod},
+           given={Ezio},
+           giveni={E\bibinitperiod}}}%
+        {{hash=6a3d495e7fe8be7c290f4d4cbad2e84f}{%
+           family={Nickovic},
+           familyi={N\bibinitperiod},
+           given={Dejan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=930e6a5b5877f8e9218f144bb79af565}{%
+           family={Grosu},
+           familyi={G\bibinitperiod},
+           given={Radu},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7087f4807b76923117e1736440bb54d5}{%
+           family={Smolka},
+           familyi={S\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{20a76cb45592105e1c72b45b036de0f9}
+      \strng{fullhash}{317c24f040b3f83370379e2fdc8f0d6d}
+      \strng{bibnamehash}{20a76cb45592105e1c72b45b036de0f9}
+      \strng{authorbibnamehash}{20a76cb45592105e1c72b45b036de0f9}
+      \strng{authornamehash}{20a76cb45592105e1c72b45b036de0f9}
+      \strng{authorfullhash}{317c24f040b3f83370379e2fdc8f0d6d}
+      \field{labelalpha}{Don+12}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Automated Technology for Verification and Analysis: 10th International Symposium, ATVA 2012, Thiruvananthapuram, India, October 3-6, 2012. Proceedings 10}
+      \field{title}{On temporal logic and signal processing}
+      \field{year}{2012}
+      \field{pages}{92\bibrangedash 106}
+      \range{pages}{15}
+    \endentry
+    \entry{fainekos2009}{article}{}
+      \name{author}{2}{}{%
+        {{hash=84ddd8e6d20ce8d222e2daa90d5fa2b3}{%
+           family={Fainekos},
+           familyi={F\bibinitperiod},
+           given={Georgios\bibnamedelima E},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=13515e3859af5918925e99eddb9a9079}{%
+           family={Pappas},
+           familyi={P\bibinitperiod},
+           given={George\bibnamedelima J},
+           giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{176f413d557ae487ec8667ac850d8cf2}
+      \strng{fullhash}{176f413d557ae487ec8667ac850d8cf2}
+      \strng{bibnamehash}{176f413d557ae487ec8667ac850d8cf2}
+      \strng{authorbibnamehash}{176f413d557ae487ec8667ac850d8cf2}
+      \strng{authornamehash}{176f413d557ae487ec8667ac850d8cf2}
+      \strng{authorfullhash}{176f413d557ae487ec8667ac850d8cf2}
+      \field{labelalpha}{FP09}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Theoretical Computer Science}
+      \field{number}{42}
+      \field{title}{Robustness of temporal logic specifications for continuous-time signals}
+      \field{volume}{410}
+      \field{year}{2009}
+      \field{pages}{4262\bibrangedash 4291}
+      \range{pages}{30}
+    \endentry
+    \entry{maler2004}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=7f463f1763196d47be4efcdb27cf0f83}{%
+           family={Maler},
+           familyi={M\bibinitperiod},
+           given={Oded},
+           giveni={O\bibinitperiod}}}%
+        {{hash=6a3d495e7fe8be7c290f4d4cbad2e84f}{%
+           family={Nickovic},
+           familyi={N\bibinitperiod},
+           given={Dejan},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{b0273587a0cce1fceac38ccc4a404608}
+      \strng{fullhash}{b0273587a0cce1fceac38ccc4a404608}
+      \strng{bibnamehash}{b0273587a0cce1fceac38ccc4a404608}
+      \strng{authorbibnamehash}{b0273587a0cce1fceac38ccc4a404608}
+      \strng{authornamehash}{b0273587a0cce1fceac38ccc4a404608}
+      \strng{authorfullhash}{b0273587a0cce1fceac38ccc4a404608}
+      \field{labelalpha}{MN04}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International symposium on formal techniques in real-time and fault-tolerant systems}
+      \field{title}{Monitoring temporal properties of continuous signals}
+      \field{year}{2004}
+      \field{pages}{152\bibrangedash 166}
+      \range{pages}{15}
+    \endentry
+    \entry{maler2008}{article}{}
+      \name{author}{3}{}{%
+        {{hash=7f463f1763196d47be4efcdb27cf0f83}{%
+           family={Maler},
+           familyi={M\bibinitperiod},
+           given={Oded},
+           giveni={O\bibinitperiod}}}%
+        {{hash=6a3d495e7fe8be7c290f4d4cbad2e84f}{%
+           family={Nickovic},
+           familyi={N\bibinitperiod},
+           given={Dejan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=48771ab1876a9bd3472621189d78fe6f}{%
+           family={Pnueli},
+           familyi={P\bibinitperiod},
+           given={Amir},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{41bf237912d46e4e51bb0345bffa1880}
+      \strng{fullhash}{41bf237912d46e4e51bb0345bffa1880}
+      \strng{bibnamehash}{41bf237912d46e4e51bb0345bffa1880}
+      \strng{authorbibnamehash}{41bf237912d46e4e51bb0345bffa1880}
+      \strng{authornamehash}{41bf237912d46e4e51bb0345bffa1880}
+      \strng{authorfullhash}{41bf237912d46e4e51bb0345bffa1880}
+      \field{labelalpha}{MNP08}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Pillars of Computer Science: Essays Dedicated to Boris (Boaz) Trakhtenbrot on the Occasion of His 85th Birthday}
+      \field{title}{Checking temporal properties of discrete, timed and continuous behaviors}
+      \field{year}{2008}
+      \field{pages}{475\bibrangedash 505}
+      \range{pages}{31}
+    \endentry
+    \entry{nickovic2007}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=6a3d495e7fe8be7c290f4d4cbad2e84f}{%
+           family={Nickovic},
+           familyi={N\bibinitperiod},
+           given={Dejan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=7f463f1763196d47be4efcdb27cf0f83}{%
+           family={Maler},
+           familyi={M\bibinitperiod},
+           given={Oded},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{7ea779e3881c8b5f87ee66e090bb3bc5}
+      \strng{fullhash}{7ea779e3881c8b5f87ee66e090bb3bc5}
+      \strng{bibnamehash}{7ea779e3881c8b5f87ee66e090bb3bc5}
+      \strng{authorbibnamehash}{7ea779e3881c8b5f87ee66e090bb3bc5}
+      \strng{authornamehash}{7ea779e3881c8b5f87ee66e090bb3bc5}
+      \strng{authorfullhash}{7ea779e3881c8b5f87ee66e090bb3bc5}
+      \field{labelalpha}{NM07}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference on Formal Modeling and Analysis of Timed Systems}
+      \field{title}{AMT: A property-based monitoring tool for analog systems}
+      \field{year}{2007}
+      \field{pages}{304\bibrangedash 319}
+      \range{pages}{16}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
