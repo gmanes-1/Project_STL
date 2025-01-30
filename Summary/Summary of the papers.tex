@@ -7,6 +7,7 @@
 \usepackage{enumitem}
 \usepackage{float}
 \usepackage[ruled]{algorithm2e}
+\usepackage{algpseudocode}
 \usepackage{titlesec}
 \usepackage{mathtools}
 \usepackage{stmaryrd}
@@ -14,7 +15,7 @@
 \addbibresource{/Users/giuseppe/Desktop/Master of Logic/First year/Third Period/Project_STL/references.bib}
 \newtheorem*{definition}{Definition}
 \newtheorem*{proposition}{Proposition}
-\input{/Users/giuseppe/Desktop/Master of Logic/modal.tex}
+\input{/Users/giuseppe/Desktop/Master of Logic/First year/Third Period/Project_STL/modal.tex}
 \renewcommand{\b}{\textbf}
 \renewcommand{\i}{\textit}
 \setlength\parindent{0pt}
@@ -395,7 +396,7 @@ In this paper an optimal algorithm that computes robustness is presented. This a
     \item rewriting of the bounded until operator as a conjunction of an untimed and a simple timed operators.
 \end{itemize}
 
-\section{Signal Temporal Logic}
+\section{SIGNAL TEMPORAL LOGIC}
 Recall the framework set of \cite{maler2004}  and extension of it to a multivalued logic as proposed in \cite{fainekos2009}. The set of Booleans is defined as follows $\mathbb{B}=\{\bot,\top\}$, with the following proprieties:
 \begin{itemize}[leftmargin=0.5cm]
     \item $\bot<\top$,
@@ -502,14 +503,17 @@ Given the soundness and the correctness, for a given trace $w$, and a \STL formu
 
 \subsection{Rewriting the operator Until}
 We can claim about the until operator the following proprieties, extended from the Boolean to the quantitative semantics:
-\begin{align}
-    \varphi \,\mathcal{U}_{[a,b]}\,\psi\quad    \equiv  &\quad\pos_{[a,b]}\psi\:\land\:\varphi\,\mathcal{U}_{[a,+\infty)}\,\psi \label{1}\\
-    \varphi\,\mathcal{U}_{[a,+\infty)}\,\psi\quad   \equiv  &\quad\nec_{[0,a]}(\varphi\,\mathcal{U}\,\psi)
-\end{align}
+\begin{proposition}\label{quantitative until}
+    \begin{align}
+        \varphi \,\mathcal{U}_{[a,b]}\,\psi\quad    \equiv  &\quad\pos_{[a,b]}\psi\:\land\:\varphi\,\mathcal{U}_{[a,+\infty)}\,\psi \label{3.1}\\
+        \varphi\,\mathcal{U}_{[a,+\infty)}\,\psi\quad   \equiv  &\quad\nec_{[0,a]}(\varphi\,\mathcal{U}\,\psi) \label{3.2}
+    \end{align}
+\end{proposition}
+
 
 \begin{proof} \textcolor{white}{---}
 
-    \b{(\ref{1})}
+    \b{(\ref{3.1})}
 
     Let be $y,y'$ the robustness signals $\varphi, \psi$ relative to $w$. Now consider 
         \begin{align*}
@@ -534,7 +538,7 @@ It is possible to push the constant outside the scope of the operators of $\min,
 \xRightarrow{\text{By Soundness}}   &\quad w, t \nvDash \gamma                              &\quad \text{and} \quad     & w, t \vDash \vartheta
 \end{align*}
 
-\section{Computing the Robustness Estimate}
+\section{COMPUTING THE ROBUSTNESS ESTIMATE}
 
 In monitoring signals are available as finite timed over an alphabet $\mathbb{R}^n$, and they can be interpreted as linear interpolation. Presentation of the basic framework for computing robustness, under this hypothesis. 
 
@@ -576,7 +580,80 @@ The representation is redundant, by continuity, but facilitates the splitting in
 
 Computing the robustness of $\lnot \varphi$ from $\varphi$ is trivial. Note that if the sequence $(t_i,y(t_i),\partial y(t_i))_{i<n_y}$ represents $\rho(\varphi,w,\bullet)$ then the sequence $(t_i,-y(t_i),-\partial y(t_i))_{i<n_y}$ represents $\rho(\lnot\varphi,w,\bullet)$.
 
-For conjunction let take $y$ and $y'$ as the robustness of $\varphi$ and $\psi$ respectively, producing $z$ the robustness signal of $\varphi\land\psi$. Then consider the sequence $(r_i)_{i\leq n_z}$ containing the sampling points of $y$ and $y'$ when they are both defined, and the points where $y$ and $y'$ intersect.
+For conjunction let take $y$ and $y'$ as the robustness of $\varphi$ and $\psi$ respectively, producing $z$ the robustness signal of $\varphi\land\psi$. Then consider the sequence $(r_i)_{i\leq n_z}$ containing the sampling points of $y$ and $y'$ when they are both defined, and the points where $y$ and $y'$ intersect. Such intersect are at most $n_y+n_{y'}$ sampling points. So we say that $$n_z\leq n_y+n_{y'}\leq 2\cdot \max\{n_y,n_{y'}\}\leq 4\cdot \max\{n_y,n_{y'}\}.$$
+
+Now we have that for all $i\leq n_z$ using the lexicographic order we get: $$\binom{z(r_i)}{\partial z(r_i)}^t=\min\Biggl\{\binom{y(r_i)}{\partial y(r_i)}^t,\binom{y'(r_i)}{\partial y'(r_i)}^t\Biggr\}.$$
+
+The resulting sequence $(r_i,z(r_i), \partial z(r_i))_{i\leq n_z}$ adequately represents $\rho(\varphi\land\psi,w,\bullet)$
+
+\subsection{Untimed $\pos$}
+
+It helps to compute the until operator. Let $y$ be the robustness of the signal $\varphi$, $(t_i)_{i<n_y}$ its time sequence and $z$ the robustness of the signal $\pos\varphi$. For any $t$ in its definition domain $z(t)=\sup_{t'\leq t}y(t')$. Immediate from this we have that $\forall s<t, z(s)=\max\{\sup_{[s,t)}y,z(t)\}$. 
+
+The computational step can be derived applying at time $t_{i+1}$ with $i+1<n_y$. Depending on the ordering of ${y(t_i),y(t_{i+1}),z(t_{i+1})}$, we have the following possibilities:
+
+\begin{align*}
+    y(t_i)\leq y(t_{i+1}) :                 & \quad \forall s\in[t_i,t_{i+1}), z(s)=\max{y(t+1),z(t+1)}  \\
+    y(t_i) > y(t_{i+1}) \geq z(t_{i+1}) :   & \quad \forall s\in[t_i,t_{i+1}), z(s)=y(s)\\
+    z(t_{i+1}) \geq y(t_i) > y(t_{i+1}) :   & \quad \forall s\in[t_i,t_{i+1}), z(s)=z(t+1)\\
+    y(t_i) > z(t_{i+1}) > y(t_{i+1}) :      & \quad \exists t' \forall s \in [t_i,t'), z(s)=y(s)\;\text{and} \\ 
+                                            & \quad \quad \;\forall s\in[t',t_{i+1}), z(s)=z(t+1)\\
+\end{align*}
+
+The induction is initialized by substituting $\bot$ for $z(t_{n_y})$, in the propriety. Over the whole signal $y$, each sample $t_i$ generates up to two samples in $z$.
+
+\subsection{Until}
+
+Use the rewriting of the timed until in the conjunction of the untimed until and the timed eventually. This decomposition holds in \STL for the Boolean semantics and it has been proven above that it holds for the quantitative semantics in \ref{quantitative until}. For $\mathcal{U}_{[a,+\infty)}$ we can directly rewrite as in \ref{3.2}, while for $\mathcal{U}_{[a,b]}$ we have the conjunction of \ref{3.1} and \ref{3.2}. Since $\nec$ is the dual of $\pos$ we only need to expand the algorithm for the case $\pos_{[a,b]}$, where the interval is non-singular, and for the untimed until.%%%%%%%%%%%%%% boh cercare non-singular interval
+
+\section{ALGORITHMS}
+
+Algorithms for $\mathcal{U}$ and $\pos_{[a,b]}$. 
+
+For any signal $y$ and two instants $s<t \in \mathbb{R}^+$, consider $y_{\upharpoonright[s,t)}$. The output signal $z$ will be computed as a series of segments $z_{\upharpoonright[s,t)}$.
+
+\subsection{Operator $\mathcal{U}$}
+Let $y,y'$ be the robustness signal respectively  of $\varphi,\psi$ with $(t_i)_{i\leq n_y}$, $(t'_i)_{i\leq n_{y'}}$  their time sequences. Then $z$ is the robustness signal of $\varphi\,\mathcal{U}\,\psi$ relative to $w$. We hav eby definition that $$$$
+
+\begin{align*}
+                &\quad z(t)= \sup_{\tau\in[t,+\infty)}\min\biggl\{y'(\tau),\inf_{[s,t)}y,z(t)\biggr\} & \langle\text{by proprieties of sup and inf} \rangle \\
+    \Rightarrow &\quad z(s)= \max\biggl\{z_t(s),\min\biggl\{\inf_{[s,t)}y,z(t)\biggr\}\biggr\}
+\end{align*}
+
+Let $y$ be affine on the interval $[s,t]$. Then
+\begin{itemize}[leftmargin=0.5cm]
+    \item $\partial y(s)\leq 0 \Rightarrow \forall \tau \in [s,t), \inf_{[s,\tau]}y=y(\tau)\Rightarrow \\z_t(s)=\sup_{\tau\in[s,t)}\min\{y'(t),y(\tau)\}\: \text{ and } \:z(s)=\max\{z_t(s)\min{y(t),z(t)}\}$
+    \item Otherwise $\Rightarrow \forall \tau\in [s,t), \inf_{[s,\tau]}y=y(s)\Rightarrow \\z_t(s)=\sup_{\tau\in[s,t)}\min\{y'(t),y(s)\}=\min\{y(s), \sup_{[s,t)}y'\} \: \text{ and } \\\:z(s)=\max\{z_t(s)\min{y(s),z(t)}\}$
+\end{itemize}
+
+If $t=t_i$ in the description above and compute $z(s)$ for akk $s$ on the segment $[t_i,t_{i+1})$, taking $\overline{v}$ as the constant signal of value $v$, we can express all the operations involved as computations previously implemented. This gives us the following algorithm, where $[t_0,t_{n_y})\subseteq \dom{\psi}$.
+
+\begin{algorithm}[H]
+    \caption{Compute($\mathcal{U}, y, y'$)}
+    $z_0 \gets \overline{\bot}$\\
+    $i \gets n_y - 1$\\
+    \While{$i \geq 0$}{
+        \If{$\partial y(t_i)$}{
+            $z_1 \gets \text{Compute}(\text{pos}, y'_{\upharpoonright [t_i, t_{i+1})})$\\
+            $z_2 \gets \text{Compute}(\land, z_1, y_{\upharpoonright [t_i, t_{i+1})})$\\
+            $z_3 \gets \text{Compute}(\land, \overline{y(t_{i+1})}, z_0)$\\
+            $z_{\upharpoonright [t_i, t_{i+1})} \gets \text{Compute}(\lor, z_2, z_3)$\\
+        }
+        \Else{
+            $z_1 \gets \text{Compute}(\land, y'_{\upharpoonright [t_i, t_{i+1})}, y_{\upharpoonright [t_i, t_{i+1})})$\\
+            $z_2 \gets \text{Compute}(\text{pos}, z_1)$\\
+            $z_3 \gets \text{Compute}(\land, y_{\upharpoonright [t_i, t_{i+1})}, z_0)$\\
+            $z_{\upharpoonright [t_i, t_{i+1})} \gets \text{Compute}(\lor, z_2, z_3)$
+        }
+        
+        $z_0 \gets \overline{z_{\upharpoonright [t_i, t_{i+1})}(t_i)}$\\
+        $i \gets i - 1$
+    }
+    \Return $z$
+\end{algorithm}
+
+
+
 
 \printbibliography
 \end{document}
